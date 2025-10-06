@@ -63,8 +63,15 @@ Lógica relevante
 Comandos útiles
 ---------------
 
-- Ejecutar pruebas (si se agregan en el futuro): `python manage.py test`
-- Generar un token manual: `python manage.py shell` y usar `RefreshToken.for_user(User.objects.first())`
+- Ejecutar pruebas con pytest:
+
+	```bash
+	env\Scripts\activate
+	python -m pytest
+	```
+
+	Las suites incluidas validan que solo administradores puedan crear o editar productos y que los clientes únicamente vean sus órdenes, mientras que los administradores listan todas. Los casos residen en `tests/test_products_permissions.py` y `tests/test_orders_access.py`.
+
 - Crear roles iniciales:
 
 	```bash

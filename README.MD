@@ -81,4 +81,9 @@ Comandos útiles
 	>>> Role.objects.get_or_create(name='client')
 	```
 
+- Ususarios de prueba en la bd
+
+	puedes usar el usuario con rol admin, usuario: admin@admin.com contraseña: Admin21. (el punto incluido)
+	puedes usar el usuario con client, usuario: palis963@hotmail.com contraseña: Client21. (el punto incluido)
+
 Con esto el backend queda listo para atender al frontend y exponer la API necesaria para usuarios, productos y órdenes.
